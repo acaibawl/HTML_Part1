@@ -58,6 +58,7 @@ a:link, a:visited, a:hover, a:active {
     color: #666;
     font-size: 1.3rem;
     letter-spacing: 1px;
+    transition: 0.2s;
 }
 .global-nav .nav-item.active a,
 .global-nav .nav-item a:hover {
@@ -72,6 +73,52 @@ a:link, a:visited, a:hover, a:active {
     display: block;
     float: left;
     width: 660px;
+}
+.hot-topic {
+    display: block;
+    height: 300px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.2s;
+}
+.hot-topic:hover {
+    opacity: 0.85;
+}
+.hot-topic .image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.hot-topic .content {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 105px 25px 0;
+    background-color: #2d3d54;
+}
+.hot-topic .title {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.0rem;
+}
+.hot-topic .desc {
+    color: #ddc;
+}
+.hot-topic .date {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 140px;
+    padding: 4px;
+    background-color: #fff;
+    color: #2d3d54;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1;
 }
 .sidemenu {
     float: right;

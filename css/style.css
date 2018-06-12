@@ -246,6 +246,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .ranking .ranking-item a {
     display: block;
+    position: relative;
     font-size: 0;
     transition: opacity 0.15s;
 }
@@ -258,6 +259,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .ranking .text {
     display: inline-block;
+    margin-left: 20px;
     width: 182px;
     color: #000;
     vertical-align: top;
@@ -265,19 +267,25 @@ a:link, a:visited, a:hover, a:active {
     line-height: 1.5;
 }
 .ranking .order {
-    display: inline-block;
+    z-index: 1;
+/*    display: inline-block;*/
+    position:absolute;
+    top: -8px;
+    left: 45px;
     width: 18px;
     height: 18px;
-    margin: 0 10px;
+/*    margin: 0 10px;*/
     border: 1px solid #ccc;
     color: #aaa;
-    vertical-align: 20px;
+    background-color: #fff;
+/*    vertical-align: 20px;*/
     text-align: center;
     font-weight: bold;
     line-height: 16px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    border-radius: 50%;
+/*    -webkit-transform: rotate(45deg);*/
+/*    -ms-transform: rotate(45deg);*/
+/*    transform: rotate(45deg);*/
 }
 .ranking .ranking-item:nth-of-type(1) .order,
 .ranking .ranking-item:nth-of-type(2) .order,
@@ -298,12 +306,12 @@ a:link, a:visited, a:hover, a:active {
 }
 .ranking .order::before {
     content: counter(ranking);
-    display: inline-block;
+/*    display: inline-block;*/
     font-size: 1.0rem;
     counter-increment: ranking;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+/*    -webkit-transform: rotate(-45deg);*/
+/*    -ms-transform: rotate(-45deg);*/
+/*    transform: rotate(-45deg);*/
 }
 .documents {
     margin: 10px 10px 30px;
